@@ -1,5 +1,6 @@
+// src/api.js
 export async function callChatGPT(body) {
-  const res = await fetch("/api/chatgpt", {
+  const res = await fetch("/.netlify/functions/chatgpt", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(body),
